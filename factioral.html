@@ -1,0 +1,23 @@
+<body>
+  <h1 class="title">Factorial & Fibonacci</h1>
+  <div id="output"></div>
+
+  <script>
+    function calculate(n) {
+        let fact = 1;
+        for(let i=1; i<=n; i++) fact *= i;
+
+        let a=0,b=1,series="0 1 ";
+        for(let i=2; i<n; i++){
+            let c = a + b;
+            series += c + " ";
+            a=b; b=c;
+        }
+
+        document.getElementById('output').innerHTML =
+            "<p>Factorial: " + fact + "</p>" +
+            "<p>Fibonacci: " + series + "</p>";
+    }
+    calculate(5);
+  </script>
+</body>

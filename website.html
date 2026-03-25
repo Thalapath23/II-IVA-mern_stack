@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Time Table</title>
+<head>
+	<title>Time Table</title>
+	<style>
+		body{
+			font-family: Arial, sans-serif;
+			background-color:#f8f9fa;
+			margin: 0;
+			padding: 0;
+		}
+		h1 {
+			text-align: center;
+			color:#343a40;
+		}
+		table{
+			border-collapse: collapse;
+			margin: 20px auto;
+			background-color: #008738;
+			border:2px solid #dee2e6;
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+		}
+
+		th,
+		td {
+			border: 1px solid #dee2e6;
+			padding: 10px;
+			text-align: center;
+		}
+		
+		th {
+			background-color: #008738;
+			color:#343a40;
+		}
+		.highlight{
+			background-color:#008738;
+		}
+		.special{
+			background-color:#0087380;
+	}
+
+		</style>
+</head>
+<body>
+	<h1>TIME TABLE</h1>
+        <table>
+		<tr>
+			<th>Day/period</th>
+			<th>I<br>9:30-10:10</th>
+			<th>II<br>10:30-11:00</th>
+			<th>III<br>11:30-12:10</th>
+			<th>12:10-1:10</th>
+			<th>IV<br>1:10-1:40</th>
+			<th>V<br>1:40-2:10</th>
+			<th>VI<br>2:10-3:10</th>
+			<th>VII<br>3:10-4:10</th>
+		</tr>
+		<tr>
+		<td class="highlight"><b>Monday</b></td>
+		<td>Eng</td>
+       		<td>mat</td>
+		<td>che</td>
+    		<td rowspan="6" class="special"><b>LUNCH</b></td>
+		<td colspan="3" class="special">CFLAB</td>
+		<td>phy</td>
+     		</tr>
+		<tr>
+		<td class ="highlight"><b>Tuesday</b></td>
+		<td colspan="3" class="special">CFLAB</td>
+		<td>Eng</td>
+		<td>che</td>
+
+
+			
